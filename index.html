@@ -63,37 +63,22 @@
     
 -->
 
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>Komunikado</title>
     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <!--
-        
-        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
-        
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-        
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-        
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
-    -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <!--
@@ -147,8 +132,19 @@
 -->
 <div id="impress">
 
-    <!-- TODO -->
+    <div id="intro" class="step text-center" data-x="0" data-y="0">
+        <h1>Komunikado</h1>
+        <p class="text-muted">Projet d'ISN de Duc, Lucas et Simon</p>
+    </div>
 
+    <div id="what-is-komunikado" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h1>1. Qu'est-ce que <strong>Komunikado</strong> ?</h1>
+    </div>
+
+
+    <div id="report" class="step text-center" data-x="+=0" data-y="+=1000">
+        <a href="http://emersion.fr/private/edu/2013-2014/isn/komunikado/report.html">Voir le dossier papier</a>
+    </div>
 </div>
 
 <!--
