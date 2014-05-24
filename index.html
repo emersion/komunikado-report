@@ -134,11 +134,52 @@
 
     <div id="intro" class="step text-center" data-x="0" data-y="0">
         <h1>Komunikado</h1>
+        <img data-src="img/status_user-available.svg" class="iconic komunikado-icon" alt="" style="height: 100px; width: 100px;">
         <p class="text-muted">Projet d'ISN de Duc, Lucas et Simon</p>
     </div>
 
-    <div id="what-is-komunikado" class="step text-center" data-x="+=0" data-y="+=1000">
+    <div id="what-is-it" class="step text-center" data-x="+=0" data-y="+=1000">
         <h1>1. Qu'est-ce que <strong>Komunikado</strong> ?</h1>
+    </div>
+
+    <div id="communication-app" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Une application de communication</h2>
+    </div>
+
+    <div id="privacy" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Le problème de la vie privée</h2>
+    </div>
+
+    <div id="open-web-app" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Une application Web ouverte</h2>
+    </div>
+
+    <div id="under-the-hood" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h1>2. Sous le capot</h1>
+    </div>
+
+    <div id="p2p" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Le syst&agrave;me pair-&agrave;-pair</h2>
+    </div>
+
+    <div id="signaling" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Le serveur de signalement</h2>
+        <p>session control, network and media information</p>
+    </div>
+
+    <div id="ice" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>ICE : trouver des pairs</h2>
+        <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/#ice">HTML5 rocks</a>
+    </div>
+
+    <div id="stun-n-turn" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>STUN &amp; TURN : traverser les parse-feux et NATs</h2>
+        <a href="http://io13webrtc.appspot.com/#44">Google I/O</a>
+    </div>
+
+    <div id="stun-n-turn" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Et &agrave; propos de la s&eacute;curit&eacute;</h2>
+        <a href="http://io13webrtc.appspot.com/#53">Google I/O</a>
     </div>
 
 
@@ -222,6 +263,17 @@ if ("ontouchstart" in document.documentElement) {
     is used in event handlers.
     
 -->
+
+<script src="js/svg-injector.min.js"></script>
+<script>
+    // Elements to inject
+    var mySVGsToInject = document.querySelectorAll('img.iconic');
+
+    // Do the injection
+    SVGInjector(mySVGsToInject, {
+        evalScripts: 'never'
+    });
+</script>
 
 </body>
 </html>

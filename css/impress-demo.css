@@ -215,6 +215,10 @@ a:focus {
     font-variant: small-caps;
 }
 
+#intro svg {
+    width: 100px;
+    height: 100px;
+}
 
 /*
     Now, when we have all the steps styled let's give users a hint how to navigate
