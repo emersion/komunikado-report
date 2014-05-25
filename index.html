@@ -76,7 +76,7 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <link href="css/impress-demo.css" rel="stylesheet" />
 </head>
@@ -134,7 +134,6 @@
 
     <div id="intro" class="step text-center" data-x="0" data-y="0">
         <h1>Komunikado</h1>
-        <img data-src="img/status_user-available.svg" class="iconic komunikado-icon" alt="" style="height: 100px; width: 100px;">
         <p class="text-muted">Projet d'ISN de Duc, Lucas et Simon</p>
     </div>
 
@@ -144,6 +143,7 @@
 
     <div id="communication-app" class="step text-center" data-x="+=0" data-y="+=1000">
         <h2>Une application de communication</h2>
+        <img src="img/status_user-available.svg" class="komunikado-icon" alt="">
     </div>
 
     <div id="privacy" class="step text-center" data-x="+=0" data-y="+=1000">
@@ -159,12 +159,18 @@
     </div>
 
     <div id="p2p" class="step text-center" data-x="+=0" data-y="+=1000">
-        <h2>Le syst&agrave;me pair-&agrave;-pair</h2>
+        <h2>Le syst&egrave;me pair-&agrave;-pair</h2>
     </div>
 
     <div id="signaling" class="step text-center" data-x="+=0" data-y="+=1000">
         <h2>Le serveur de signalement</h2>
-        <p>session control, network and media information</p>
+        <p>Contrôle de session, réseau et métadonnées</p>
+
+        <div class="row">
+            <div class="col-md-4"><h3>Contrôle de session</h3><small>Connexion, déconnexion, gestion des erreurs</small></div>
+            <div class="col-md-4"><h3>Réseau</h3><small>Listage d'autres pairs, récupération de leurs adresses IP</small></div>
+            <div class="col-md-4"><h3>Capacités du navigateur</h3><small>Codecs (audio/vidéo) et résolutions supportées par le pair distant</small></div>
+        </div>
     </div>
 
     <div id="ice" class="step text-center" data-x="+=0" data-y="+=1000">
