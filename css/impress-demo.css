@@ -42,19 +42,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
 }
 
 table {
@@ -185,6 +175,16 @@ a:focus {
 }
 
 .impress-enabled .step.active { opacity: 1 }
+
+
+/* BLOCKQUOTES */
+
+blockquote {
+    border-color: rgb(51, 51, 51);
+}
+blockquote, blockquote p {
+    font-size: inherit;
+}
 
 /*
     And now we start to style each step separately.

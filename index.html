@@ -158,6 +158,18 @@
         <h1>2. Sous le capot</h1>
     </div>
 
+    <div id="webrtc-whaow" class="step" data-x="+=0" data-y="+=1000">
+        <blockquote>
+            <p>"WebRTC is a new front in the long war for an open and unencumbered web"</p>
+            <footer>Brendan Eich, Mozilla CTO and inventor of JavaScript</footer>
+        </blockquote>
+    </div>
+
+    <div id="webrtc-ouch" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Mais en fait c'est très simple...</h2>
+        <img src="img/webrtcArchitecture.png">
+    </div>
+
     <div id="p2p" class="step text-center" data-x="+=0" data-y="+=1000">
         <h2>Le syst&egrave;me pair-&agrave;-pair</h2>
     </div>
@@ -173,20 +185,68 @@
         </div>
     </div>
 
+    <div id="stun-n-turn-without" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Dans un monde idéal</h2>
+        <img src="img/noSTUNorTURN.png">
+    </div>
+
+    <div id="stun-n-turn-firewall" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Le monde réel</h2>
+        <img src="img/firewall.png">
+    </div>
+
+    <div id="stun" class="step" data-x="+=0" data-y="+=1000">
+        <h2>STUN</h2>
+        <ul>
+            <li>Dites-moi quelle est mon adresse IP publique</li>
+            <li>Serveur simple, peu gourmand en ressources</li>
+            <li>Les données passent toujours par le pair-à-pair, sans faire de détour par un serveur</li>
+        </ul>
+    </div>
+
+    <div id="stun-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>STUN</h2>
+        <img src="img/stun.png">
+    </div>
+
+    <div id="turn" class="step" data-x="+=0" data-y="+=1000">
+        <h2>TURN</h2>
+        <ul>
+            <li>Dans le cas où la communication en pair-à-pair est impossible</li>
+            <li>Serveur qui sert de relai pour les données</li>
+            <li>Optionnel</li>
+        </ul>
+    </div>
+
+    <div id="stun-n-turn-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>STUN et TURN</h2>
+        <img src="img/STUNandTURN.png">
+        <small><a href="http://io13webrtc.appspot.com/#44">Source : Google I/O</a></small>
+    </div>
+
     <div id="ice" class="step text-center" data-x="+=0" data-y="+=1000">
-        <h2>ICE : trouver des pairs</h2>
-        <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/#ice">HTML5 rocks</a>
+        <h2>ICE</h2>
+        <p>Un protocole pour trouver le meilleur chemin</p>
+        <img src="img/icestats.png"><br />
+        <small><a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/#ice">Source : HTML5 rocks</a></small>
     </div>
 
-    <div id="stun-n-turn" class="step text-center" data-x="+=0" data-y="+=1000">
-        <h2>STUN &amp; TURN : traverser les parse-feux et NATs</h2>
-        <a href="http://io13webrtc.appspot.com/#44">Google I/O</a>
+    <div id="security" class="step" data-x="+=0" data-y="+=1000">
+        <h2>Et &agrave; propos de la s&eacute;curit&eacute; ?</h2>
+        <ul>
+            <li>Chiffrement obligatoire des données (médias tout comme brutes)</li>
+            <li>Interface : l'utilisateur doit accepter (<em>explicit opt-in</em>)</li>
+            <li>Aucun plugin</li>
+        </ul>
     </div>
 
-    <div id="stun-n-turn" class="step text-center" data-x="+=0" data-y="+=1000">
-        <h2>Et &agrave; propos de la s&eacute;curit&eacute;</h2>
-        <a href="http://io13webrtc.appspot.com/#53">Google I/O</a>
+    <div id="security-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Et &agrave; propos de la s&eacute;curit&eacute; ?</h2>
+        <img src="img/securePathways.png">
+        <small><a href="http://io13webrtc.appspot.com/#53">Source : Google I/O</a></small>
     </div>
+
+    
 
 
     <div id="report" class="step text-center" data-x="+=0" data-y="+=1000">
