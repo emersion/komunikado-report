@@ -20,6 +20,38 @@
 */
 
 /*
+    We start with a good ol' reset.
+    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+
+    You can probably argue if it is needed here, or not, but for sure it
+    doesn't do any harm and gives us a fresh start.
+*/
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
     Now here is when interesting things start to appear.
 
     We set up <body> styles with default font and nice gradient in the background.
@@ -106,6 +138,10 @@ body {
     font-weight: bold;
 }
 
+.step img {
+    max-width: 100%;
+}
+
 /*
     ... and we enhance the styles for impress.js.
 
@@ -123,6 +159,16 @@ body {
 }
 
 .impress-enabled .step.active { opacity: 1 }
+
+
+/* BLOCKQUOTES */
+
+blockquote {
+    border-color: rgb(51, 51, 51);
+}
+blockquote, blockquote p {
+    font-size: inherit;
+}
 
 /*
     And now we start to style each step separately.

@@ -137,6 +137,7 @@
         <p class="text-muted">Projet d'ISN de Duc, Lucas et Simon</p>
     </div>
 
+
     <div id="what-is-it" class="step text-center" data-x="+=0" data-y="+=1000">
         <h1>1. Qu'est-ce que <strong>Komunikado</strong> ?</h1>
     </div>
@@ -151,18 +152,66 @@
         <img src="img/status_changes-prevent-symbolic.svg" class="heading-icon" alt="">
     </div>
 
+    <div id="privacy-others" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h3>Skype, Facebook, Hangouts, Whatsapp, etc...</h3>
+        <img src="img/client-server.svg" alt="">
+        <p>Un mod&egrave;le centralis&eacute;</p>
+    </div>
+
+    <div id="privacy-us" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h3>Komunikado</h3>
+        <img src="img/p2p.svg" alt="">
+        <p>Un mod&egrave;le d&eacute;centralis&eacute;</p>
+    </div>
+
     <div id="open-web-app" class="step text-center" data-x="+=0" data-y="+=1000">
         <h2>Une application Web ouverte</h2>
         <img src="img/apps_web-browser-symbolic.svg" class="heading-icon" alt="">
     </div>
+
+    <div id="html5-css3" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Les derni&egrave;res technologies du Web</h2>
+        <img src="img/html5-css3.svg" alt="">
+    </div>
+
+    <div id="gplv3" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Un logiciel libre</h2>
+        <img src="img/gplv3.svg" alt="">
+    </div>
+
+    <div id="plugin-free" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Plugin-free!</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/exploit-flash.jpg" alt="">
+            </div>
+            <div class="col-sm-6">
+                <img src="img/exploit-java.png" alt="">
+            </div>
+        </div>
+    </div>
+
 
     <div id="under-the-hood" class="step text-center" data-x="+=0" data-y="+=1000">
         <h1>2. Sous le capot</h1>
         <img src="img/actions_system-run-symbolic.svg" class="heading-icon" alt="">
     </div>
 
+    <div id="webrtc-whaow" class="step" data-x="+=0" data-y="+=1000">
+        <blockquote>
+            <p>"WebRTC is a new front in the long war for an open and unencumbered web"</p>
+            <footer>Brendan Eich, Mozilla CTO and inventor of JavaScript</footer>
+        </blockquote>
+    </div>
+
+    <div id="webrtc-ouch" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Mais en fait c'est très simple...</h2>
+        <img src="img/webrtcArchitecture.png">
+    </div>
+
     <div id="p2p" class="step text-center" data-x="+=0" data-y="+=1000">
         <h2>Le syst&egrave;me pair-&agrave;-pair</h2>
+        <img src="img/p2p.svg" alt="">
     </div>
 
     <div id="signaling" class="step text-center" data-x="+=0" data-y="+=1000">
@@ -184,21 +233,65 @@
         <p>Codecs (audio/vidéo) et résolutions supportées par le pair distant</p>
     </div>
 
-    <div id="ice" class="step text-center" data-x="+=0" data-y="+=1000" data-rotate="+=90">
-        <h2>ICE : trouver des pairs</h2>
-        <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/#ice">HTML5 rocks</a>
+    <div id="stun-n-turn-without" class="step text-center" data-x="+=0" data-y="+=1000" data-rotate="+=90">
+        <h2>Dans un monde idéal</h2>
+        <img src="img/noSTUNorTURN.png">
     </div>
 
-    <div id="stun-n-turn" class="step text-center" data-x="+=0" data-y="+=1000">
-        <h2>STUN &amp; TURN : traverser les parse-feux et NATs</h2>
-        <a href="http://io13webrtc.appspot.com/#44">Google I/O</a>
+    <div id="stun-n-turn-firewall" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Le monde réel</h2>
+        <img src="img/firewall.png">
     </div>
 
-    <div id="security" class="step text-center" data-x="+=0" data-y="+=1000">
+    <div id="stun" class="step" data-x="+=0" data-y="+=1000">
+        <h2>STUN</h2>
+        <ul>
+            <li>Dites-moi quelle est mon adresse IP publique</li>
+            <li>Serveur simple, peu gourmand en ressources</li>
+            <li>Les données passent toujours par le pair-à-pair, sans faire de détour par un serveur</li>
+        </ul>
+    </div>
+
+    <div id="stun-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>STUN</h2>
+        <img src="img/stun.png">
+    </div>
+
+    <div id="turn" class="step" data-x="+=0" data-y="+=1000">
+        <h2>TURN</h2>
+        <ul>
+            <li>Dans le cas où la communication en pair-à-pair est impossible</li>
+            <li>Serveur qui sert de relai pour les données</li>
+            <li>Optionnel</li>
+        </ul>
+    </div>
+
+    <div id="stun-n-turn-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>STUN et TURN</h2>
+        <img src="img/STUNandTURN.png">
+        <small><a href="http://io13webrtc.appspot.com/#44">Source : Google I/O</a></small>
+    </div>
+
+    <div id="ice" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>ICE</h2>
+        <p>Un protocole pour trouver le meilleur chemin</p>
+        <img src="img/icestats.png"><br />
+        <small><a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/#ice">Source : HTML5 rocks</a></small>
+    </div>
+
+    <div id="security" class="step" data-x="-=500" data-y="-=00" data-rotate-y="-=90">
         <h2>Et &agrave; propos de la s&eacute;curit&eacute; ?</h2>
-        <img src="img/status_security-medium-symbolic.svg" class="heading-icon" alt="">
-        <br />
-        <a href="http://io13webrtc.appspot.com/#53">Google I/O</a>
+        <ul>
+            <li>Chiffrement obligatoire des données (médias tout comme brutes)</li>
+            <li>Interface : l'utilisateur doit accepter (<em>explicit opt-in</em>)</li>
+            <li>Aucun plugin</li>
+        </ul>
+    </div>
+
+    <div id="security-schema" class="step text-center" data-x="+=0" data-y="+=1000">
+        <h2>Et &agrave; propos de la s&eacute;curit&eacute; ?</h2>
+        <img src="img/securePathways.png">
+        <small><a href="http://io13webrtc.appspot.com/#53">Source : Google I/O</a></small>
     </div>
 
 
