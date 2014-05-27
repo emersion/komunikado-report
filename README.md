@@ -1,4 +1,3 @@
-komunikado-report
-=================
+# Compte-rendu sur [Komunikado](https://github.com/komunikado)
 
-Report for Komunikado
+Komunikado est une application de messagerie instantanee, realisee a l'occasion d'un projet d'ISN.
